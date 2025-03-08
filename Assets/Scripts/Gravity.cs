@@ -21,7 +21,6 @@ public class Gravity : MonoBehaviour
 
         //add object (with gravity script) to attract to the list
         otherObjectsList.Add(this);
-
     }
 
     private void FixedUpdate()
@@ -34,7 +33,6 @@ public class Gravity : MonoBehaviour
                 Attract(obj);
             }
         }
-
     }
 
     void Attract(Gravity other)
