@@ -9,7 +9,6 @@ public class Gravity : MonoBehaviour
 
     //create a List of objects in the galaxy to attract
     public static List<Gravity> GravityObjectsList;
-;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
