@@ -9,6 +9,10 @@ public class Gravity : MonoBehaviour
 
     //create a List of objects in the galaxy to attract
     public static List<Gravity> otherObjectsList;
+
+    //set speed for orbiting
+    //[SerializeField] bool planet = false; //if not a planet -> orbit
+   // [SerializeField] int orbitSpeed = 1000;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -21,6 +25,10 @@ public class Gravity : MonoBehaviour
 
         //add object (with gravity script) to attract to the list
         otherObjectsList.Add(this);
+
+        //orbiting
+       // if (!planet) 
+       // { rb.AddForce(Vector3.left * orbitSpeed); }
     }
 
     private void FixedUpdate()
