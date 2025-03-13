@@ -11,8 +11,8 @@ public class Gravity : MonoBehaviour
     public static List<Gravity> otherObjectsList;
 
     //set speed for orbiting
-    //[SerializeField] bool planet = false; //if not a planet -> orbit
-   // [SerializeField] int orbitSpeed = 1000;
+    [SerializeField] bool planet = false; //if not a planet -> orbit
+    [SerializeField] int orbitSpeed = 1000;
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -27,8 +27,8 @@ public class Gravity : MonoBehaviour
         otherObjectsList.Add(this);
 
         //orbiting
-       // if (!planet) 
-       // { rb.AddForce(Vector3.left * orbitSpeed); }
+       if (!planet) 
+       { rb.AddForce(Vector3.left * orbitSpeed); }
     }
 
     private void FixedUpdate()
