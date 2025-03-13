@@ -2,15 +2,25 @@ using UnityEngine;
 
 public class GravityE : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    Rigidbody rb;
+    const float G = 0.00674f;
+
+    private void Awake()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void Attract(GravityE other)
     {
-        
+        Rigidbody otherRb = other.rb;
+
+        //find distance between two objects
+        Vector3 direction = rb.position - otherRb.position;
+        float distance = direction.magnitude;
+        float forceMagnitude = G * ((rb.mass * otherRb.mass) / Mathf.Pow(distance, 2));
+        Vector3 finalForce = forceMagnitude * direction.normalized;
+
+        //addforce 
+        otherRb.AddForce(finalForce);
     }
 }

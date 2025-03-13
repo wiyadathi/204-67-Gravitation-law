@@ -18,6 +18,6 @@ public class GravityB : MonoBehaviour
         float distance = direction.magnitude;
 
         //calculate Gravity force
-        float forceMagnitude = 
+        //float forceMagnitude = 
     }
 }
