@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 1000
 --- !u!135 &80663498
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -261,6 +263,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 1000
 --- !u!136 &85998129
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -734,6 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 1000
 --- !u!54 &1072690424
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -915,6 +921,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 1
+  orbitSpeed: 0
 --- !u!54 &1272476140
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -959,6 +967,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 1000
 --- !u!54 &1314057254
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1003,6 +1013,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b110b978e7521ca489c152509fa944d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planet: 0
+  orbitSpeed: 1000
 --- !u!135 &1341360217
 SphereCollider:
   m_ObjectHideFlags: 0
